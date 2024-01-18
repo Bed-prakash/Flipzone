@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.5s;
+}
+body{
+    overflow: scroll;
+    width: 100%;
+    margin-top: 10vw;
+
+}
+table,table1{
+    width: 100%;
+    margin-top: 1vw;
+    border-collapse: collapse;
+}
+th,th{
+    width: 33.9vw;
+    height: 10vw;
+    border: 1px solid black;
+}
+th{
+    height: 15vw;
+    font-size: 1.5vw;
+}
+.head{
+    height: 3vw;
+    background-color: greenyellow;
+    font-weight: bold;
+    border: 3px solid black;
+}
+#trHead{
+    width: 100%;
+    position: fixed;
+    left: 0.01vw;
+    top: 6vw;
+}
+#gip{
+    width: 6vw;
+    height: 4vw;
+    
+}
+.textImg{
+    margin-bottom: 1vw;
+    color: transparent;
+    background-image: linear-gradient(45deg,rgba(255, 0, 0, 0.832),rgba(255, 166, 0, 0.832),rgba(255, 0, 0, 0.689),rgba(68, 186, 14, 0.765),red,orange);
+    -webkit-background-clip: text;
+    background-position: 10px;
+    background-size: 400px;
+    animation: textColor 2s  linear forwards infinite;
+}
+@keyframes textColor {
+    from{
+        background-position: 10px;
+    }to{
+        background-position: 1000px;
+    }
+}
+.id,.price{
+    width: 6vw;
+}
+#img{
+    width: 13vw;
+    height: 10vw;
+    margin-top: 2.4vw;
+}
+#cardButton{
+    width: 9vw;
+    height: 4vw;
+    /* position: absolute; */
+    float: right;
+    margin-right: 3vw;
+    margin-top: 5vw;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+#cardButton:hover{
+    background-color: rgba(0, 0, 255, 0.827);
+}
+.imgcon:hover #img{
+    transform: scale(1.4);
+}
+th:hover{
+    background-color: rgba(0, 0, 0, 0.128);
+}
+.head:hover{
+   background-color: rgba(0, 128, 0, 0.6); 
+}
+.aPrice:hover{
+    background-color: rgba(255, 0, 0, 0.618);
+}
+.dPrice:hover{
+    background-color: rgba(172, 255, 47, 0.859);
+}
+.discount:hover{
+    background-color: rgba(255, 166, 0, 0.888);
+}

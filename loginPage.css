@@ -1,0 +1,218 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 1s;
+}
+body{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(45deg, gray,rgba(0, 0, 0, 0.37),darkgray);
+    background-repeat: no-repeat;
+    background-size: 100% 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 99vh;
+    /* background-color: red; */
+    overflow: hidden;
+    box-shadow: 0px 5px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+video{
+    width: 100%;
+    height: 150vh;
+    filter: brightness(50%);
+    position: relative;
+    z-index: 0;
+}
+#pageHeading{
+    position: absolute;
+    z-index: 5;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+span{
+    font-size: 7vw;
+    color: white;
+    margin-top: 25vh;
+    letter-spacing: 4vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 4px 4px 4px black;
+}
+.headingLetters{
+    font-size: 8vw;
+    /* font-style: italic; */
+    font-family: 'Pacific', cursive;
+}
+#f{
+    
+    animation: latterAnimation 0.5s backwards;
+}
+#l{
+ 
+    animation: latterAnimation 0.5s 0.1s backwards;
+}
+#i{
+    animation: latterAnimation 0.5s 0.2s backwards;
+}
+#p{
+  
+    animation: latterAnimation 0.5s 0.3s backwards;
+}
+#z{
+   
+    animation: latterAnimation 0.5s 0.4s backwards;
+}
+#o{
+
+    animation: latterAnimation 0.5s 0.5s backwards;
+}
+#n{
+  
+    animation: latterAnimation 0.5s 0.6s backwards;
+}
+/* @keyframes textBlink {
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
+
+@keyframes latterAnimation {
+    0%,20%{
+        transform: translate(0,-25vw) rotate(45deg) scale(2);
+    }
+    100%{
+        transform: translate(0,0px) rotate(0deg) scale(1);
+    }
+}
+#backgroundAnimation{
+    width: 300px;
+    height: 250px;
+    background-image: conic-gradient(red,blue,green,rgba(127, 192, 127, 0.473),red);
+    animation: animationBackground 15s infinite alternate;
+    filter: blur(50px);
+
+}
+#container2{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@keyframes  animationBackground{
+    0%,100%{
+        transform: rotate(360deg);
+        border-radius: 30% 70% 30% / 30% 30% 70% ;
+    }
+    25%{
+        border-radius: 40% 71% 35% / 60% 35% 70% ;
+    }
+    50%{
+        transform: rotate(0deg);
+        border-radius: 71% 60% 30% / 60% 64% 30% ;
+    }
+}
+#loginForm{
+    width: 26vw;
+    height: 25vw;
+    background-color: gray;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h1{
+    color: white;
+    letter-spacing: 10px;
+    font-size: 1.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+.info{
+    width: 80%;
+    height: 2.5vw;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 5px;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    box-shadow: 2px 2px 5px black;
+}
+
+a:hover{
+    color: red;
+}
+#button{
+    width: 60%;
+    height: 2.5vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: linear-gradient(75deg, rgb(131, 79, 79),rgb(243, 17, 17),rgb(221, 45, 121),rgb(112, 60, 201),rgb(235, 156, 156),rgb(18, 193, 102),rgb(131, 79, 79));
+    background-size: 800px;
+    background-position: 800px;
+    box-shadow: 4px 4px 5px black;
+    letter-spacing: 1vw;
+    font-weight: bold;
+    font-size: 1.4vw;
+    text-transform: capitalize;
+    color: black;
+    cursor: pointer;
+}
+#button:hover{
+    animation: buttonAnimation 1s;
+}
+@keyframes buttonAnimation {
+    0%,100%{
+        transform: rotateX(0deg) rotateY(0deg) skew(0deg,0deg);
+        background-position: 800px;
+    }
+    25%,75%{
+        transform: rotateX(20deg) rotateY(30deg) skew(10deg,25deg);
+    }
+    50%{
+        transform: rotateX(-20deg) rotateY(-30deg) skew(-10deg,-25deg);
+        background-position: 0px;
+    }
+}
+a{
+    color: white;
+    letter-spacing: 0.2vw;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+}
+img{
+    position: absolute;
+    top: 1vw;
+    width: 50%;
+    height: 69vh;
+}
+header{
+    background-color: rgba(11, 212, 231, 0.765);
+}

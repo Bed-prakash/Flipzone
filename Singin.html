@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="./Singin.css">
+    <script src="./Signin.js" defer></script>
+</head>
+<body onload="load1()">
+<div id="signUpContainer">
+    <div id="singnForm">
+        <form action="" class="form">
+           <center><h1 style="font-size: 2.5vw; font-style: italic;">Registration page</h1></center> 
+            <div id="name">
+                <input required type="text" class="names cssstyle" placeholder="First Name">
+                <input required type="text" class="names cssstyle" placeholder="Last Name">                
+            </div>
+            
+                <input required type="email"  placeholder="Email Id" class="contInp cssstyle" id="email">
+                <input required  type="tel" minlength="10" maxlength="10" placeholder="Contect Number" class="contInp cssstyle">
+                <input required  type="password"  placeholder="password" class="contInp cssstyle" id="password">
+                <input required  type="password"  placeholder="Confirm password" class="contInp cssstyle" id="cpassword">
+           
+            <h2>Date Of Birth</h2>
+            <div id="dob" class="">
+                <select required id="Date" class="dob">
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option >10</option>
+                    <option >11</option>
+                    <option >12</option>
+                    <option >13</option>
+                    <option >14</option>
+                    <option >15</option>
+                    <option >16</option>
+                    <option >17</option>
+                    <option >18</option>
+                    <option >19</option>
+                    <option >20</option>
+                    <option >21</option>
+                    <option >22</option>
+                    <option >23</option>
+                    <option >24</option>
+                    <option >25</option>
+                    <option >26</option>
+                    <option >27</option>
+                    <option >28</option>
+                    <option >29</option>
+                    <option >30</option>
+                    <option >31</option>
+                </select>
+                <select required name="" class="dob" id="month" >
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option >10</option>
+                    <option >11</option>
+                    <option >12</option>
+                </select>
+                <select required name="" id="year" class="dob">
+                    <option value="">1961</option>
+                    <option value="">1962</option>
+                    <option value="">1963</option>
+                    <option value="">1964</option>
+                    <option value="">1965</option>
+                    <option value="">1966</option>
+                    <option value="">1967</option>
+                    <option value="">1968</option>
+                    <option value="">1969</option>
+                    <option value="">1970</option>
+                    <option value="">1971</option>
+                    <option value="">1972</option>
+                    <option value="">1973</option>
+                    <option value="">1974</option>
+                    <option value="">1975</option>
+                    <option value="">1976</option>
+                    <option value="">1977</option>
+                    <option value="">1978</option>
+                    <option value="">1979</option>
+                    <option value="">1980</option>
+                    <option value="">1981</option>
+                    <option value="">1982</option>
+                    <option value="">1983</option>
+                    <option value="">1984</option>
+                    <option value="">1985</option>
+                    <option value="">1986</option>
+                    <option value="">1987</option>
+                    <option value="">1988</option>
+                    <option value="">1989</option>
+                    <option value="">1990</option>
+                    <option value="">1991</option>
+                    <option value="">1992</option>
+                    <option value="">1993</option>
+                    <option value="">1994</option>
+                    <option value="">1995</option>
+                    <option value="">1996</option>
+                    <option value="">1997</option>
+                    <option value="">1998</option>
+                    <option value="">1999</option>
+                    <option value="">2000</option>
+                </select>
+            </div>
+            <h2>Gender</h2>
+            <div id="genderDiv">
+                <div class="gen">
+                    <label >Female</label>
+                    <input class="gend" type="radio" name="Gender">
+                </div>
+                <div class="gen">
+                    <label >Male</label>
+                    <input class="gend" type="radio" name="Gender">
+                </div>
+                <div class="gen">
+                    <label >Other</label>
+                    <input  class="gend" type="radio" name="Gender">
+                </div>
+            </div>
+            <div class="terms">
+                <input required type="checkbox" id="check">
+                <p>People who are the using our service may have uploaded your contect information to facebook learn more .</p>
+            </div>
+            <h2 id="errorR"></h2>
+            <div id="button">
+                <input onclick="submitForm()" id="submit" type="button" value="Signup">
+            </div>
+            <a href="./index.html" style="font-size: 1.7vw;">
+                Already have a account?
+            </a>
+        </form>
+    </div>
+    <div id="infoSide">
+        <h1 id="headingOfThePage">Flipzon</h1>
+        <img id="signupImg" src="./Assets/images/signup2.png" alt="shoping image">
+    </div>
+</div>
+</body>
+</html>

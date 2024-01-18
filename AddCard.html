@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./HomePage.css">
+    <link rel="stylesheet" href="./AddCard.css">
+    <script src="./AddCard.js" defer></script>
+    <style>
+        #img{
+            position: relative;
+            top: 0.1vw;
+        }
+    </style>
+</head>
+<body id="bdy" onload="upload()">
+    <nav id="navbar" >
+        <div id="logo">
+            Flipzon 
+        </div>
+    
+        <div id="nevButtonCon">
+            <a href="./HomePage.html" class="add">Deshboard</a>
+            <a href="./AddCard.html" class="add">Card</a>
+            <a href="./BuyProdList.html" class="add">Buy Product list</a>
+            <a href="./index.html" class="add">Login</a>
+            <a href="./Singin.html" class="add">Signup</a>
+            <div id="add"><h2 id="h2Add" >add</h2>
+                <span id="cart-count"></span> 
+            </div>
+        </div>    
+    </nav>
+   <center> <table id="table">
+        <tr id="trHead">
+            <th class="id head">S.No.</th>
+            <th class="id head">id</th>
+            <th class="head">Title</th>
+            <th class="price head">Actual Price</th>
+            <th class="price head">Discount</th>
+            <th class="price head">Discount Price</th>
+            <th class="head imgTh">Image</th>
+        </tr>
+        
+    </table>
+</center>
+</body>
+</html>

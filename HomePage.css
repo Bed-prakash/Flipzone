@@ -1,0 +1,168 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.5s;
+}
+body{
+    margin-top: 5.5vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#navbar{
+    width: 100%;
+    height: 6vw;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.901);
+   position: fixed;
+   top: 0px;
+}
+
+#logo,#add{
+    padding-top: 1vw;
+    font-size: 25px;
+    padding-left: 5%;
+    color: white;
+    /* display: inline; */
+    
+}
+#logo{
+    width: 15vw;
+    height: 50%;
+    margin-top: 0.5vw;
+    margin-left: 2vw;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10vw 0%;
+    letter-spacing: 0.5vw;
+    font-size: 1.8vw;
+    color: green;
+    font-style: italic;
+    background-color: white;
+}
+#add{
+    width: 4vw;
+    height: 2.5vw;
+    border-radius: 10vw 0% 0% 0%;
+    background-color: rgba(137, 43, 226, 0.822);
+    display: flex;
+    justify-content: end;
+    padding-right: 1vw;
+}
+
+.add{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    width: 10vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#h2Add{
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+.add:hover{
+    background-color: black;
+    box-shadow: 8px 3px 5px black;
+}
+#nevButtonCon{
+    width: 75%;
+    height: 6vw;
+    /* background-color: burlywood; */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#cart-count{
+ position: fixed;
+ left: 90%;
+ font-size: 1.6vw;
+ font-weight: bold;
+ z-index: 5;
+ color: white;
+
+}
+#nevLeft{
+    width: 10vw;
+    margin-top: 5vw;
+   position: inherit;
+    height: 100vh;
+    background-color: rgba(137, 43, 226, 0.488);
+}
+
+#productLine1{
+    width: 99%;
+    float: right;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-content: space-evenly; */
+    display: flex;
+}
+#oneSetCont{
+    width: 20vw;
+    height: 30vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border: 0.1px solid black;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#oneSetCont:hover img{
+    transform: scale(1.1);
+}
+img{
+    width: 10vw;
+    height: 10vw;  
+}
+
+p{
+    font-size: 1.4vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 0.2vw;
+}
+.p{
+    font-weight: bold;
+}
+button{
+    width: 7vw;
+    height: 2.4vw;
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin-left: 1vw;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+
+}
+#button{
+    width: 7vw;
+    height: 2.4vw;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+
+
+
+
+
