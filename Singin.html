@@ -11,12 +11,12 @@
         <form action="" class="form">
            <center><h1 style="font-size: 2.5vw; font-style: italic;">Registration page</h1></center> 
             <div id="name">
-                <input required="true" type="text" class="names cssstyle" placeholder="First Name">
-                <input required="true" type="text" class="names cssstyle" placeholder="Last Name">                
+                <input required type="text" id="fname" class="names cssstyle" placeholder="First Name">
+                <input required type="text" id="lname" class="names cssstyle" placeholder="Last Name">                
             </div>
             
                 <input required type="email"  placeholder="Email Id" class="contInp cssstyle" id="email">
-                <input required  type="tel" minlength="10" maxlength="10" placeholder="Contect Number" class="contInp cssstyle">
+                <input required  type="tel" minlength="10" maxlength="10" placeholder="Contect Number" class="contInp cssstyle" id="number">
                 <input required  type="password"  placeholder="password" class="contInp cssstyle" id="password">
                 <input required  type="password"  placeholder="Confirm password" class="contInp cssstyle" id="cpassword">
            
@@ -131,19 +131,19 @@
             <div id="genderDiv">
                 <div class="gen">
                     <label >Female</label>
-                    <input class="gend" type="radio" name="Gender">
+                    <input  class="gend" type="radio" name="Gender">
                 </div>
                 <div class="gen">
                     <label >Male</label>
-                    <input class="gend" type="radio" name="Gender">
+                    <input  class="gend" type="radio" name="Gender">
                 </div>
                 <div class="gen">
                     <label >Other</label>
-                    <input  class="gend" type="radio" name="Gender">
+                    <input class="gend" type="radio" name="Gender">
                 </div>
             </div>
             <div class="terms">
-                <input required type="checkbox" id="check">
+                <input type="checkbox" id="check">
                 <p>People who are the using our service may have uploaded your contect information to facebook learn more .</p>
             </div>
             <h2 id="errorR"></h2>
