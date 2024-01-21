@@ -29,6 +29,7 @@ function submitForm(){
         form1[0].elements[10].value="";
         form1[0].elements[11].value="";
         form1[0].elements[12].value="";
+        window.location.href="index.html";
     } else if(password!=cpassword ){
         document.getElementById("errorR").innerHTML="Miss match password";
         document.getElementById("errorR").style.color="red";
