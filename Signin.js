@@ -5,11 +5,6 @@ function submitForm(){
     const fname=document.getElementById("fname").value
     const lname=document.getElementById("lname").value
     const number=document.getElementById("number").value
-    const check=document.getElementById("check").value
-    const g1=document.getElementById("g1").value
-    const g2=document.getElementById("g2").value
-    const g3=document.getElementById("g3").value
-    console.log(number,lname,fname,check,g1,g2,g3);
     if (password==cpassword && password.length!=0 && (fname.length)!=0 && (lname.length)!=0 && (number.length)==10) {
         sessionStorage.setItem("email",email);
         sessionStorage.setItem("password",password);
