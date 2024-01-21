@@ -26,7 +26,7 @@ function displayProducts1(products) {
       <img src="${products[0].image}" alt="temp">    
   </div>
   <div id="text">
-      <p id="discription"><b><u> Description</u> : </b> ${(products[0].description).toFixed(300)}.</p>
+      <p id="discription"><b><u> Description</u> : </b> ${products[0].description}.</p>
       <p><b><u>Title</u> : </b> ${products[0].title}</p>
       <p class="p">Actual Price : <del>${(products[0].price)*80}</del>Rs</p>
       <p class="p">Discount : 10%</p>
