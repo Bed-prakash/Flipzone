@@ -22,11 +22,26 @@ body{
 
 #logo,#add{
     padding-top: 1vw;
-    font-size: 25px;
+    font-size: 2.5vw;
     padding-left: 5%;
     color: white;
     /* display: inline; */
     
+}
+#search{
+    width: 12vw;
+    height: 2.3vw;
+    font-size: 1.3vw;
+    padding-left: 1vw;
+    border-radius: 0.5vw;
+    border: 1px solid rgb(0, 255, 238);
+}
+#searchButton{
+    width: 3vw;
+    /* border-radius: 2vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #logo{
     width: 15vw;
@@ -84,7 +99,7 @@ body{
     align-items: center;
 }
 #cart-count{
- position: fixed;
+ position: absolute;
  left: 90%;
  font-size: 1.6vw;
  font-weight: bold;
@@ -96,7 +111,7 @@ body{
     width: 10vw;
     margin-top: 5vw;
    position: inherit;
-    height: 100vh;
+    height: 25vw;
     background-color: rgba(137, 43, 226, 0.488);
 }
 
@@ -104,7 +119,7 @@ body{
     width: 99%;
     float: right;
     position: relative;
-    top: 10vh;
+    top: 5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

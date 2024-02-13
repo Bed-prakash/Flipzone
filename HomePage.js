@@ -1,11 +1,27 @@
 var dataArray;
 function load(){
+  
 // Function to fetch product data from the API
 fetch('https://fakestoreapi.com/products')
       .then(response => response.json())
       .then(products => {
         dataArray =products;
-        displayProducts(products);
+        var search ="";
+        search =document.getElementById("search").value
+        console.log(search);
+        var s="";
+        if (search.length>0) {
+            var n=products.filter((pdata)=>{
+              // console.log(String(pdata.title).includes(search));
+              // String(pdata.title).includes(search)
+              
+            })
+            console.log(n.id);
+            displayProducts(n);
+        }else{
+          displayProducts(products);
+        }
+        
       });
 
       
